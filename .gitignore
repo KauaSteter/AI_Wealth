@@ -1,0 +1,74 @@
+# AI Wealth Advisor - .gitignore
+
+# Environment files
+.env
+.env.example
+
+# Build artifacts
+backend/dist/
+frontend/dist/
+frontend/build/
+
+# Node.js / NPM
+frontend/node_modules/
+frontend/.npm
+frontend/.vite
+frontend/coverage/
+frontend/.nyc_output/
+frontend/.sass-cache/
+
+# Go
+backend/*.exe
+backend/**/*.exe
+backend/pkg/
+backend/vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Data files
+database/
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+backend/mock_backend.py
+
+# Node modules (frontend)
+frontend/node_modules/
+
+# Docker
+*.tar.gz
+
+# Temporary files
+*.tmp
+*.temp
+
+# Ignore all in infrastructure/scripts since they are empty
+infrastructure/scripts/
+
+# Ignore empty directories
+backend/migrations/
+
+# Ignore any other cache files
+.cache/
+
+# Ignore any other build directories
+**/dist/
+**/build/
